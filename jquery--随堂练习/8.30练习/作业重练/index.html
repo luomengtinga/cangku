@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>选项卡</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<style>
+		ul{width:300px;height:40px;border:#888 solid 1px;
+			border-radius: 5px;padding:0px;margin-top:0px;}
+		ul > li{list-style: none; float:left;width:90px;height:40px;
+			text-align: center;font-size:18px;line-height: 40px;margin-left:5px;border-left:dashed;}
+		ul >li.active{border:none;margin-left:0px;}
+		.contains{position:relative;border:#888 solid 1px;width:302px;height:200px;padding:0px;border-top:none;}
+		.contains >div{width:300px;height:200px;position:absolute;margin-top:0px;top:40px;display: none;}
+		.contains > div.active{display: block;}
+        </style>
+		
+			<script>
+			$(function () {
+				$("li").mouseenter(function () {
+					// 获取当前鼠标进入选项卡的下标
+					var currentIndex = $(this).index();
+					// 让所有的选项卡内容隐藏
+					$(".contains > div").css("display", "none");
+					// 让对应下标的选显卡内容显示
+					$(".contains > div").eq(currentIndex).css("display", "block");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="contains">
+			<ul>
+				<li class="first">娱乐</li>
+				<li>新闻</li>
+				<li>电影</li>
+			</ul>
+			<div class="first">
+				娱乐娱乐娱乐娱乐娱乐娱乐娱乐
+				娱乐娱乐娱乐娱乐娱乐娱乐娱乐
+				娱乐娱乐娱乐娱乐娱乐娱乐娱乐
+				娱乐娱乐娱乐娱乐娱乐娱乐娱乐
+				娱乐娱乐娱乐娱乐娱乐娱乐娱乐
+				</div>
+			<div>
+				新闻新闻新闻新闻新闻新闻新闻
+				新闻新闻新闻新闻新闻新闻新闻
+				新闻新闻新闻新闻新闻新闻新闻
+				新闻新闻新闻新闻新闻新闻新闻
+				新闻新闻新闻新闻新闻新闻新闻
+			</div>
+			<div>
+				游戏游戏游戏游戏游戏游戏游戏
+				游戏游戏游戏游戏游戏游戏游戏
+				游戏游戏游戏游戏游戏游戏游戏
+				游戏游戏游戏游戏游戏游戏游戏
+				游戏游戏游戏游戏游戏游戏游戏
+			</div>
+			
+		</div>
+	</body>
+</html>

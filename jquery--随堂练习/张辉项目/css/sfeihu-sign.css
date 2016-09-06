@@ -1,0 +1,173 @@
+
+body{
+	width: 100%;
+	font: normal 12px/22px "Microsoft Yahei";
+	background: url(../img/bg.jpg) repeat-x;
+	color: #666;
+}
+
+/*===================main========================*/
+.login-wrap{
+	width: 950px;
+	height: 570px;	
+	margin: 0 auto;
+	background: url(../img/login_bg.jpg) no-repeat 0 0px;
+	position: relative;
+}
+.login-wrap .logo02{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.login-box{
+	width: 328px;
+	height: 350px;
+	border: 2px solid #EEDFBB;
+	background: #fff;
+	position: absolute;
+	right: 177px;
+	top: 50px;
+	bottom: 64px;
+}
+.login-box h2{
+	height: 31px;
+	line-height: 31px;	
+	background: url(../img/titleBG.png) repeat-x;
+	color: #666;
+	font-size: 16px;
+}
+.boxMain{
+	width: 332px;
+	height: 354px;	
+	padding: 10px;
+}
+.boxMain table{
+	border-collapse: separate;
+	font-size: 12px;
+	width: 306px;
+	height: 241px;
+}
+.boxMain table p{
+    float: right;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+.boxMain table input{
+	width: 210px;
+	height: 22px;
+	border: solid 1px #cccccc;
+	line-height: 22px;
+	padding: 0 5px;
+	color: #666;
+	outline: none;
+}
+.boxMain table div{
+   background: #ECF9DF;
+	padding-left: 5px;
+	color: #FF4C31;
+}
+#sign-other{
+	border-top: 1px dashed #ccc;
+	width: 100%;
+	height: 80px;
+	line-height: 18px;
+	padding: 10px 0px;
+	margin-top:5px ;
+	background: #fff;
+}
+#sign-other b{
+	display: block;
+	width: 66px;
+	height: 90px;
+	float: left;
+}
+#sign-other .sign-logo{
+	background: #fff;
+	width: 225px;
+	height: 98px;
+	float: left;
+}
+#sign-other .sign-logo span{
+	display: block;
+	height: 33px;
+	width: auto;
+	text-indent: 20px;
+	float: left;
+	margin-left: 10px;
+	color: #3F70FC;
+	cursor: pointer;
+}
+
+#agreement-box{
+    float: left;
+    line-height: 24px;
+    width: 210px;
+    height: 24px;
+    background: #fff;
+}
+.tips{
+	height: 30px;
+	width: 296px;	
+	font-family: Applied Font;	
+	border: 1px solid #ccc;
+	line-height: 30px;
+	padding-left: 10px;
+	background: #FAFAFA;
+	margin-bottom: 5px;
+	display: block;
+}
+.err-tips{
+	height: 30px;
+	width: 273px;
+	border: 1px solid #F3CEB5;
+	line-height: 30px;
+	padding-left: 33px;
+	background: #FEF6F2 url(../img/ico_tips_err.gif) no-repeat 10px;
+	margin-bottom: 5px;		
+	color: #C5002C;
+	display: none;
+}
+
+
+.btn-register{	
+	width: 140px;
+	height: 40px;
+	display: block;
+	overflow: hidden;
+	background: url(../img/sitenav.png) no-repeat 0 -60px;
+	margin-top: 3px;
+	position: relative;
+}
+.btn-register:hover{
+	background: url(../img/sitenav.png) no-repeat 0 -100px;
+}
+.mianfei{
+	display: block;
+	width: 60px;
+	height: 30px;
+	color: #3F70FC;
+	line-height: 30px;
+	float: left;
+	position: absolute;
+	bottom: 28px;
+	right: 30px;
+	text-decoration: underline;
+	
+}
+/*=========================footer=============================*/
+.footer{
+	width: 980px;
+	height: 72px;
+	padding: 6px 0;
+	margin: 10px auto 20px ;
+	border-top: 1px solid #ddd;
+	position: relative;
+}
+.footer img{
+	width: 51px;
+	height: 70px;
+	position: absolute;
+	top: 10px;
+	right: 4px;
+}
+

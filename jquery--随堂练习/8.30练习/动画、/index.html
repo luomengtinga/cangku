@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<style>
+			#box{
+				width:400px;
+				height:400px;
+				background: #6A5ACD;
+			}
+		</style>
+		<script>
+			$(function(){
+				$('#btn1').click(function(){
+					$('#box').stop(true,false).hide(1000);
+				});
+				$('#btn2').click(function(){
+					$('#box').stop(true,false).show('slow');
+				});
+				$('#btn3').click(function(){
+					$('#box').slideUp(1000);
+				});
+				$('#btn4').click(function(){
+					$('#box').slideDown(1000);
+				});
+				$('#btn5').click(function(){
+					$('#box').fadeTo(1000,0.3);
+				});
+				
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" id="btn1" value="隐藏" />
+		<input type="button" id="btn2" value="显示" />
+		<input type="button" id="btn3" value="卷帘隐藏" />
+		<input type="button" id="btn4" value="卷帘显示" />
+		<input type="button" id="btn5" value="渐变显示" />
+		<input type="button" id="btn6" value="渐变隐藏" />
+		<input type="button" id="btn7" value="透明度到指定值" />
+		<input type="button" id="btn8" value="透明度恢复" />
+		<input type="button" id="btn9" value="自定义动画" />
+		<input type="button" id="btn10" value="特效动画1" />
+		<input type="button" id="btn11" value="特效动画2" />
+		<input type="button" id="btn11" value="特效动画3" />
+		<div id="box"></div>
+	</body>
+</html>

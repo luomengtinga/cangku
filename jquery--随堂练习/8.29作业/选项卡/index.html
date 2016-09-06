@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>选项卡</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<style>
+			span{display:inline-block;padding:5px 15px;background-color:#ddd;margin:0 3px;border:1px solid #ddd;border-bottom:none;}
+	.content{padding:15px;border:1px solid #ddd;font-size:24px;background-color:#efefef;display:none;width:245px;height:60px;}
+	#tab .active{background:red;}
+		</style>
+	</head>
+	<body>
+	<div id="tab"><span class="active">上海</span><span>北京</span><span>深圳</span><span>广州</span></div>
+	<div class="content" style="display:block">我喜欢去东方明珠</div>
+	<div class="content">想去北京爬长城！</div>
+	<div class="content">东部华侨城挺美的！</div>
+	<div class="content">小蛮腰夜景很闪啊~</div>
+	</body>
+	<script>
+	window.onload=function(){	
+	var spans=document.getElementsByTagName("span");
+	var cons=document.getElementsByClassName("content");
+	for(var i=0;i<spans.length;i++){
+	    spans[i].index=i;
+		spans[i].onclick=function(){
+			for(var j=0;j<spans.length;j++){
+				spans[j].className="";
+				cons[j].style.display="none";
+				}
+				this.className="active";
+				cons[this.index].style.display="block";
+				cons[this.index].style.background="yellowgreen";
+			}
+		}
+	}
+	</script>
+</html>

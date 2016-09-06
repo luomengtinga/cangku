@@ -1,0 +1,390 @@
+/*===============header=================*/
+.cart-steps{
+	position: absolute;
+	top: 35px;
+	left: 330px;
+	width: 636px;
+	height: 40px;
+	line-height: 35px;
+	background: url(../img/cart32.png) no-repeat 0 -40px;
+}
+.cart-steps li{
+	float: left;
+	width: 212px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+}
+.main{
+	width: 1200px;
+	min-height: 1000px;
+	margin: 0 auto;
+}
+.main h2{
+	font-size: 16px;
+	color: #333;
+	width: 1200px;
+	height: 25px;
+	line-height: 25px;
+	margin: 15px 0;
+}
+.address-box{
+	border-top: solid 2px #c7012c;
+	margin-bottom: 6px;
+	width: 1200px;
+	min-height: 100px;
+}
+.address-box .address-hd{
+	border: solid 1px #ddd;
+	border-top: 0;
+	border-bottom: none;
+	height: 30px;
+	width: 1148px;
+	line-height: 30px;
+	padding: 0 25px;
+	background: url(../img/cart_bg.png) repeat-x 0 -130px;
+	position: relative;	
+	
+}
+.address-hd span{
+	font-weight: bold;
+	line-height: 30px;
+	margin-right: 16px;
+}
+.address-hd a{
+	color: #666;
+	line-height: 30px;	
+}
+.address-hd a:hover{
+	text-decoration: underline;
+	color: #C6002C;
+}
+.cart-address{
+	padding: 15px 25px 10px;
+	border: 1px solid #ddd;
+	border-top: 0;
+	width: 1148px;
+	min-height: 42px;
+}
+.cart-address span{
+	margin-right: 20px;
+}
+.cart-address .color-red{
+	color: red;
+}
+/*-----------收货地址------------------*/
+.cart-address01{
+	padding: 15px 25px 10px;
+	border: 1px solid #ddd;
+	border-top: 0;
+	width: 1148px;
+	min-height: 42px;
+}
+.newAddress{
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+}
+.addAddress{
+	width: 800px;
+	height: 200px;
+	border: 1px solid #cacaca;
+	display: none;
+}
+
+
+
+.addAddress table{
+	border-collapse: separate;
+	font-size: 12px;
+}
+.addAddress table p{
+    float: right;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+.addAddress table span{
+    float: right;
+    color: #C6002C;
+    margin: 5px;
+}
+.addAddress table input{
+   width: 170px;
+	height: 22px;
+	border: solid 1px #cccccc;
+	line-height: 22px;
+	padding: 0 5px;
+	outline: none;
+}
+.addAddress .text-tips{
+	text-indent: 5px;
+	color: #cacaca;	
+}
+#agreement-box{
+    float: left;
+    line-height: 24px;
+    width: 210px;
+    height: 24px;
+    background: #fff;
+    display: block;
+}
+.tips{
+	color: #FF0000;
+	font-family: Applied Font;
+}
+.tips b{
+	color: #999;
+}
+.addsBtn{
+	background: #0066FF;
+	color: #fff;
+
+	border: 0;
+	width: 110px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	margin-left: 200px;
+	margin-top: 30px;
+}
+.NewAddress_div{
+	width: 900px;
+	height: 30px;
+	display: none;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========商品详细信息==================*/
+.pInformation{
+	width: 1200px;
+	min-height: 180px;	
+}
+
+.pInformation table{
+	border: 1px solid #ddd;
+	border-top:none;
+	border-top: solid 2px #c7012c;
+	height: 138px;
+	width: 1200px;
+}
+.pInformation table th{
+	font-weight: normal;
+	height: 30px;
+}
+.product-list tr td{
+	text-align: center;
+}
+.Tr01 .product-img,.Tr02 .product-img{
+	width:236px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+}
+.Tr01 .pName,.Tr02 .pName{
+	width:353px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+	
+}
+.Tr01 .pNumber,.Tr02 .pNumber{
+	width:80px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+	
+}
+.Tr01 .pPrice , .Tr02 .pPrice , .Tr01 .pTotal , .Tr02 .pTotal {
+	width:140px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+	
+}
+.Tr01 .poperate,.Tr02 .poperate{
+	width: 140px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+	
+}
+.product-img img{
+	height: 75px;
+	width: 75px;
+}
+.td-content{
+	font-size: 12px;
+	padding: 10px 0;
+	width: 1137px;
+	height: 75px;
+}
+.Tr02 .pName a:hover{
+	color: #CE0404;
+	text-decoration: underline;
+}
+
+.Tr02 .pNumber {
+	position: relative;
+}
+.pNumber .quantity-txt{
+	width: 54px;
+	height: 21px;
+	border: 1px solid #DDDDDD;
+	height: 17px;
+	text-align: center;
+	width: 50px;
+	color: #666;
+	outline: none;	
+}
+.pNumber .quantity-plus{
+	display: block;
+	background: url("../img/ui_quantity.png") no-repeat 0 0;
+	cursor: pointer;
+	height: 10px;
+	overflow: hidden;
+	position: absolute;
+	right: 38px;
+	top: 7px;
+	width: 15px;
+}
+.pNumber .quantity-redu{
+	display: block;
+	background: url("../img/ui_quantity.png")  -15px 0;
+	cursor: pointer;
+	height: 10px;
+	overflow: hidden;
+	position: absolute;
+	right: 38px;
+	top: 18px;
+	width: 15px;
+}
+.pInformation .pInformation-hd{
+	border: solid 1px #ddd;
+	border-top: 0;
+	border-bottom: none;
+	height: 30px;
+	width: 1148px;
+	line-height: 30px;
+	padding: 0 25px;
+	background: url(../img/cart_bg.png) repeat-x 0 -130px;
+	position: relative;	
+	
+}
+.pInformation-hd span{
+	font-weight: bold;
+	line-height: 30px;
+	margin-right: 16px;
+}
+.pInformation-hd a{
+	color: #666;
+	line-height: 30px;	
+}
+.pInformation-hd a:hover{
+	text-decoration: underline;
+	color: #C6002C;
+}
+/*===============订单结算==================*/
+.order-settlement{
+	height: 216px;
+	width: 1200px;
+	border-top: solid 2px #c7012c;
+	margin-bottom: 6px;
+	
+}
+.order-settlement .settlement-hd{
+	border: solid 1px #ddd;
+	border-top: 0;
+	border-bottom: none;
+	height: 30px;
+	width: 1148px;
+	line-height: 30px;
+	padding: 0 25px;
+	background: url(../img/cart_bg.png) repeat-x 0 -130px;
+	font-weight: bold;
+	
+}
+.settlement-content{
+	padding: 15px 25px 10px;
+	border: 1px solid #ddd;
+	border-top: 0;
+	width: 1148px;
+	min-height: 186px;
+	position: relative;
+}
+.settlement-content dl{
+	width: 500px;
+	height: 88px;
+	float: left;
+}
+
+.settlement-content dt{
+	line-height: 30px;
+
+}
+.settlement-content textarea{
+	width: 450px;
+	border: solid 1px #ddd;
+	height: 50px;
+	padding: 0 0 0 4px;
+	line-height: 21px;
+	color: #999;
+	overflow-y: scroll;
+	outline: none;
+}
+#totleAmount{
+	text-align: right;
+	font-size: 20px;	
+	padding: 10px 10px 10px 0;
+	color: #333;
+	width: 500px;
+	height: 88px;
+	line-height: 88px;
+	text-align: center;	
+	float: right;
+}
+#totleAmount span{
+	color: red;
+}
+.order-submit{
+	display: block;
+	width: 152px;
+	height: 46px;
+	overflow: hidden;
+	background: url(../img/cart_bg.png) no-repeat 0 -190px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	line-height: 46px;
+	position: absolute;
+	left: 540px;
+	bottom: 30px;
+}
+
+
+
+
+
+
+
+/*=============版权===================*/
+.copyright{
+	margin: 0 auto;
+	width: 1200px;
+}

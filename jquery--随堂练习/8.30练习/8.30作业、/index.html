@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>qq留言板</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<style>
+			#box{
+				width: 880px;
+				border:1px solid slateblue;
+				border-radius: 8px;
+				margin:auto;
+				background: lightgoldenrodyellow;
+			}
+			.text{
+				width:700px;
+				height:100px;
+				border: 1px solid grey;
+				margin:auto;
+				border-radius:5px ;
+			}
+			input[type='button']{
+				width:100px;height:30px;
+				border:peachpuff solid 1px;
+				border-radius: 5px;
+				float:right;
+				margin-right:90px;
+				font-size:18px;
+			}
+			.history{
+				width:680px;
+				border-top:sandybrown dashed 1px;
+				margin:auto;
+				margin-top:40px;
+			}
+			.item{
+				width:100%;
+				padding-top:10px;
+				padding-bottom: 10px;
+				border-bottom: sandybrown dashed 1px;
+				color: green;
+			}
+			.content{
+				width:660px;
+				height:80px;
+				border:none;
+				margin:auto;display: block;
+				outline: none;
+				background: lightyellow;
+			}
+				
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="text">
+				<textarea class="content">
+					
+				</textarea>
+			</div>
+			<input type="button" id="btn" value="留言" />
+			<div class="history">
+			<div class="item">
+				今天天气挺好的啊！过了就过了，一切不过是一个花开的历程
+			</div>
+			<div class="item">
+				我怀念我停在单车上的十七岁。
+				年华里，我们失去的是一种心情。
+				被岁月覆盖的花开，白驹过后变成空白
+			</div>
+			<div class="item">
+				哀莫大于心死
+				谁的寂寞覆我华裳，谁的华裳覆我肩膀
+				总有人相濡以沫二十年，却输给天真或妖冶的一张脸。
+				是有多坚强 才敢念念不忘
+				有一些过去，过去了就永远回不来。
+				凤飞翩翩兮 四海求凰
+				我们的欲望把彩虹的颜色借给那只不过是云雾的人生——泰戈尔
+			</div>
+			<div class="item">
+				我怀念我停在单车上的十七岁。
+				年华里，我们失去的是一种心情。
+				被岁月覆盖的花开，白驹过后变成空白
+			</div>
+			<div class="item">
+				我怀念我停在单车上的十七岁。
+				年华里，我们失去的是一种心情。
+				被岁月覆盖的花开，白驹过后变成空白
+			</div>
+			<div class="item">
+				我怀念我停在单车上的十七岁。
+				年华里，我们失去的是一种心情。
+				被岁月覆盖的花开，白驹过后变成空白
+			</div>
+			</div>
+		</div>
+		<script>
+			$(function () {
+				$("#btn").click(function() {
+					var msg = $(".content").val();// 获取帖子内容
+					
+					// 创建div
+			
+					// 追加到history的第一个标签前面
+					/*
+					 * 1.获取第一个子标签
+					 * 2.在第一个子标签的前面插入div before/insertBefore
+					 */
+				    if(msg==""){
+				    	alert('留言不能为空！')
+					}else{
+						var itemDiv = $("<div>");// 如果不加尖括号描述这是一个新创建的div时，运行过程中就会当成选择器处理了。
+						itemDiv.addClass("item");
+						itemDiv.text(msg);
+						$(".history").prepend(itemDiv);
+					    alert('留言成功！')
+					}
+					
+					
+				});
+			});
+		</script>
+	</body>
+</html>

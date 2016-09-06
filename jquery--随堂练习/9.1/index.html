@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>瀑布流</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<style>
+			#container{
+				position:relative;
+			}
+			.box{
+				padding:5px;
+				float:left;
+			}
+			.item{
+				padding:5px;
+				border:#ccc solid 1px; 
+				border-radius: 5px;
+				box-shadow: 5px 5px 5px 0 #ccc;
+			}
+			img{
+				width:200px;
+				height:auto;
+			}
+		</style>
+		<script>
+			$(function(){
+				$(window).on("load", function () {
+					loadImg();
+				});
+			function loadImg() {
+					// 获取视窗宽度
+					var clientWidth = $(document).width();
+					
+					// 获取所有的图片相册——.box
+					var $imgs = $(".box");
+					
+					// 计算一行能放多少张图片
+					var $cols = Math.floor(clientWidth / $imgs.eq(0).outerWidth()); 
+					
+					// 设置容器的宽度
+					$(".container").css({
+						"width":$cols * $imgs.eq(0).outerWidth(),
+						"margin":"auto"
+					});
+					
+					// 循环存放
+					var rowHeight = [];
+					$imgs.each(function (index) {
+						// 保存第一行图片的高度——数组
+						if(index < $cols){
+							rowHeight[index] = $imgs.eq(index).outerHeight();
+						} else {
+							// 第二行图片开始：定位--> 更新数组
+							var minHeight = Math.min.apply(null, rowHeight);
+							var minIndex = $.inArray(minHeight, rowHeight);
+							// 图片定位
+							$imgs.eq(index).css({
+								"position":"absolute",
+								"left":$imgs.eq(minIndex).position().left,
+								"top":minHeight
+							});
+							// 更新数组
+							rowHeight[minIndex] += $imgs.eq(index).outerHeight();
+						}
+						
+					});
+					
+					
+				}
+			})
+			
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div class="box">
+				<div class="item">
+					<img src="img/1.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="item">
+					<img src="img/2.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="item">
+					<img src="img/3.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="item">
+					<img src="img/4.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="item">
+					<img src="img/18.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="item">
+					<img src="img/17.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="item">
+					<img src="img/20.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="item">
+					<img src="img/14.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="item">
+					<img src="img/7.jpg"/>
+				</div>
+			</div>
+			<div class="box">
+				<div class="item">
+					<img src="img/11.jpg"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

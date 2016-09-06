@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JQuery 核心DOM操作</title>
+		<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+	</head>
+	<body>
+		<input type="button" id="btn1" value="append方法" />
+		<!-- 容器div -->
+		<div class="container">
+			<span>22222222222</span>
+		</div>
+		
+		<!-- 段落 -->
+		<p class="item1">
+			孙悟空三打白骨精的故事告诉我们，
+			女人太善变会被一棍子打死！
+		</p>
+		<p class="item2">
+			生活不止眼前的苟且，还有诗和远方的田野
+		</p>
+	 <script>
+			/*
+			 * 1. 子标签操作函数
+			 * A.append(B);
+			 * A.appendTo(B);
+			 * A.prepend(B);
+			 * A.prependTo(B);
+			 * 
+			 * 2. 同辈标签操作函数
+			 * A.after(B);// A->b
+			 * A.before(B);
+			 * A.insertAfter(B);// b->a
+			 * A.insertBefore(B);
+			 * 
+			 * 3.其他操作
+			 * A.wrap(content);// 使用指定的标签，包裹选中的JQuery对象
+			 * A.unwrap();// 去除掉选中的标签的父标签
+			 * A.empty();//查询选中的JQuery对象中不包含子标签或者文本的空标签
+			 * A.remove();//删除选中的A【JQuery对象】
+			 */
+			$(function () {
+				
+				// 1. A.append(B)
+				// 将B指代的数据，添加到A中去
+				/*
+				 * append中可以直接添加文本
+				 * append中可以添加文本中包含标签，标签会正常解析
+				 * append中可以添加jquery选择器，选中的元素被剪贴到指定的位置
+				 */
+				// $(".container").append("人是要有梦想的！");
+				// $(".container").append("<h2>添加标签的方式</h2>");
+				// $(".container").append($(".item1"));
+				/*
+				$(".container").append(function(index, html) {
+					if(index == 1) {
+						html = "新内容index:"+ index;;
+					} else {
+						html = "不是我要的container;index:" + index;
+					}
+					return html;
+				});
+				*/
+				$('#btn1').click(function(){
+					$('.container').append(function(index,html){
+						if(index==1){
+							html = '新内容index:'+index;
+						}else{
+							html = '啦啦啦啦啦啊'
+						}
+					})
+				
+				// 2. A.appendTo(B)
+				// 将A添加到B元素中
+				// $(".item2").appendTo(".container");
+				
+				// 3. prepend()
+				
+				// 4. prependTo();
+				
+				// 5. after()
+				//$(".container").after($(".item1"));
+			});
+		</script>
+	</body>
+</html>

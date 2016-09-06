@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+			<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+			<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+			<script>
+			$(function(){
+				var idItem    =   $("#box1");
+				var classItem =   $(".item");
+				var tagItem   =   $("p");
+				console.log(idItem);
+				console.log(classItem);
+				console.log(tagItem);
+				classItem.click(function(){
+					$(this).hide(1000);
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div id="box1">
+		<p class="item">good good study,day day up！</p>
+		<p class="item">good good study,day day up！</p>
+		<p class="item">good good study,day day up！</p>
+		<p class="item">good good study,day day up！</p>
+		<p>good good study,day day up！</p>
+		<p>good good study,day day up！</p>
+		</div>
+	
+	</body>
+</html>

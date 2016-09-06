@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播图</title>
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+		<style>
+		   html, body {
+		        position: relative;
+		        height: 100%;
+		    }
+		    body {
+		        background: #eee;
+		        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		        font-size: 14px;
+		        color:#000;
+		        margin: 0;
+		        padding: 0;
+		    }
+		    .swiper-container {
+		        width: 230px;
+		        height: 300px;
+		        
+		    }
+		    .swiper-slide {
+		        text-align: center;
+		        font-size: 18px;
+		        background: #fff;
+		        
+		        /* Center slide text vertically */
+		        display: -webkit-box;
+		        display: -ms-flexbox;
+		        display: -webkit-flex;
+		        display: flex;
+		        -webkit-box-pack: center;
+		        -ms-flex-pack: center;
+		        -webkit-justify-content: center;
+		        justify-content: center;
+		        -webkit-box-align: center;
+		        -ms-flex-align: center;
+		        -webkit-align-items: center;
+		        align-items: center;
+		    }
+		
+		</style>
+		<script>
+			$(function () {
+				var swiper = new Swiper('.swiper-container',// 轮播图的容器 
+					{
+				        pagination: '.swiper-pagination',// 导航索引视图
+				        nextButton: '.swiper-button-next',// 下一张按钮
+				        prevButton: '.swiper-button-prev',// 上一张按钮
+				        paginationClickable: true,// 导航索引视图是否可以被点击
+				        spaceBetween: 100,// 不同的图片之间的空隙
+				        centeredSlides: true,// ？？？？
+				        autoplay: 1000,// 自动播放间隔时间
+				        autoplayDisableOnInteraction: true,// 索引导航鼠标悬停
+			    	}
+				);
+			});
+		</script>
+	</head>
+	<body>
+		
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="img/1.jpg" /></div>
+	            <div class="swiper-slide"><img src="img/6.jpg" /></div>
+	            <div class="swiper-slide"><img src="img/8.jpg" /></div>
+	            <div class="swiper-slide"><img src="img/9.jpg" /></div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+	    </div>
+	</body>
+</html>

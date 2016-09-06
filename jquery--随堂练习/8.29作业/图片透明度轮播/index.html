@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图片透明轮播图</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<style>
+			* {
+	            margin: 0;
+	            padding: 0;
+			}
+			body {
+				font-size: 12px;
+				background: #666;
+			}
+			ul {
+				list-style: none;
+			}
+			img {
+				vertical-align: bottom;
+			}
+			a{
+				text-decoration: none;
+			}
+			#box {
+				position: relative;
+				margin: 30px auto 0;
+				width: 730px;
+				height: 454px;
+			}
+			#flash-list li{
+				position: absolute;
+				left:0;
+				top:0;
+				display: none;
+			}
+			#flash-list .active{
+				display: block;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="box">
+		<ul id="flash-list">
+			<li class="active"><a href="javascript:;"><img src="img/jd_1.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="img/jd_2.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="img/jd_3.jpg" alt=""></a></li>
+			<li><a href="javascript:;"><img src="img/jd_4.jpg" alt=""></a></li>
+		</ul>
+		</div>
+		<script>
+			$(function(){
+				var i=1;
+				setInterval(function(){
+					if(i==0){
+						$('#flash-list>li').fadeOut(1000);
+						$('#flash-list>li:eq(0)').fadeIn(1000);	
+					}
+					else if(i==1){
+						$('#flash-list>li').fadeOut(1000);
+						$('#flash-list>li:eq(1)').fadeIn(1000);	
+					}
+					else if(i==2){
+						$('#flash-list>li').fadeOut(1000);
+						$('#flash-list>li:eq(2)').fadeIn(1000);	
+					}
+					else if(i==3){
+						$('#flash-list>li').fadeOut(1000);
+						$('#flash-list>li:eq(3)').fadeIn(1000);	
+					}
+					i++;
+					if(i==4){
+						i=0;
+					}
+				},2000);
+					
+				
+			})
+			
+		</script>
+	</body>
+</html>

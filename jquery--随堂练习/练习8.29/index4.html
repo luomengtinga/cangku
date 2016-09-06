@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<style>
+		
+		</style>
+		<script>
+			$(function(){
+				$('#last').click(function(){
+					$('li:last').css({'color':'red','font-weight':'bolder'});
+				});
+				
+				$('#first').click(function(){
+					$('li:first').css({'color':'yellow','font-weight':'bolder'});
+				});
+				
+				$('#eq').click(function(){
+					$('li:eq(0)').css({'color':'green','font-weight':'bolder'});
+				});
+				
+				$('#even').click(function(){
+					$('li:even').css({'color':'#ccc','font-weight':'bolder'});
+				});
+				
+				$('#odd').click(function(){
+					$('li:odd').css({'color':'blue','font-weight':'bolder'});
+				});
+				
+				$('#gt').click(function(){
+					$('li:gt(3)').css({'border':'1px solid red'});
+				});
+				
+				$('#lt').click(function(){
+					$('li:lt(4)').css('border','1px solid blue');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="button" id="first" value="first选择器" />
+		<input type="button" id="last" value="last选择器" />
+		<input type="button" id="eq" value="eq选择器" />
+		<input type="button" id="even" value="even选择器" />
+		<input type="button" id="odd" value="odd选择器" />
+		<input type="button" id="gt" value="gt选择器" />
+		<input type="button" id="lt" value="lt选择器" />
+		<input type="button" id="not" value="not选择器" />
+		<input type="button" id="contains" value="contains选择器" />
+		<ul id="nav">
+			<li>测试方案</li>
+			<li>测试方案</li>
+			<li class="item item1">333333333333333</li>
+			<li class="item">444444444444444</li>
+			<li class="item">555555555555555</li>
+			<li class="item">666666666666666</li>
+			<li class="item">777777777777777</li>
+			<li>888888888888888</li>
+			<li>测试方案</li>
+		</ul>
+	</body>
+</html>

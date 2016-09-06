@@ -1,0 +1,115 @@
+
+body{
+	width: 100%;
+	font: normal 12px/22px "Microsoft Yahei";
+	background: url(../img/bg.jpg) repeat-x;
+	color: #666;
+}
+
+/*===================main========================*/
+.login-wrap{
+	width: 950px;
+	height: 570px;
+	margin: 0 auto;
+	background: url(../img/login_bg.jpg) no-repeat 0 0px;
+	position: relative;
+}
+.login-wrap .logo02{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.login-box{
+	width: 548px;
+	height: 433px;
+	border: 2px solid #EEDFBB;
+	background: #fff;
+	position: absolute;
+	right: 0px;
+	top: 30px;
+	bottom: 64px;
+}
+.login-box h2{
+	height: 31px;
+	line-height: 31px;	
+	background: url(../img/titleBG.png) repeat-x;
+	color: #666;
+	font-size: 16px;
+}
+.boxMain{
+	width: 526px;
+	height: 380px;
+	
+	padding: 10px;
+}
+.boxMain table{
+	border-collapse: separate;
+	font-size: 12px;
+}
+.boxMain table p{
+    float: right;
+    margin-top: 5px;
+    padding-right: 5px;
+}
+.boxMain table span{
+    float: right;
+    color: #C6002C;
+    margin: 5px;
+}
+.boxMain table input{
+   width: 170px;
+	height: 22px;
+	border: solid 1px #cccccc;
+	line-height: 22px;
+	padding: 0 5px;
+	outline: none;
+}
+.boxMain .text-tips{
+   background: #ECF9DF;
+	text-indent: 5px;
+	color: #FF4C31;
+	display: none;
+}
+#agreement-box{
+    float: left;
+    line-height: 24px;
+    width: 210px;
+    height: 24px;
+    background: #fff;
+    display: block;
+}
+.tips{
+	color: #FF0000;
+	font-family: Applied Font;
+}
+.tips b{
+	color: #999;
+}
+.btn-register{	
+	width: 140px;
+	height: 40px;
+	display: block;
+	overflow: hidden;
+	background: url(../img/register.png) no-repeat 0 0;
+	margin-top: 3px;
+	position: relative;
+}
+.btn-register:hover{
+	background: url(../img/register.png) no-repeat 0 -40px;
+}
+/*=========================footer=============================*/
+.footer{
+	width: 980px;
+	height: 72px;
+	padding: 6px 0;
+	margin: 10px auto 20px ;
+	border-top: 1px solid #ddd;
+	position: relative;
+}
+.footer img{
+	width: 51px;
+	height: 70px;
+	position: absolute;
+	top: 10px;
+	right: 4px;
+}

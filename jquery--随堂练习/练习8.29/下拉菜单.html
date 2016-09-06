@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script>
+		$(function(){
+			
+			$("#nav").mouseenter(function () {
+					$("#menuItem").slideDown(500);
+				});
+				$("#nav").mouseleave(function () {
+					$("#menuItem").slideUp(500);
+				});
+		
+
+		});
+		</script>
+		<style>
+		    #nav{
+		    	width:100px;
+		    }
+			#nav p{
+				width:100px;
+				background:yellow;
+				text-align: center;
+				margin-bottom: 0;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="nav"><p>一级菜单</p><div id="menuItem" style="display: none; width: 100px; height:200px;background: pink;"></div>
+		</div>
+	</body>
+</html>

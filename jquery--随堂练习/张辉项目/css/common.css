@@ -1,0 +1,427 @@
+body,div,ul,li,p,span,a,h1,h2,h3,h4,img,b,dl,dt,dd,em,button,form,table,tr,td,ol,fieldset, legend{
+	padding: 0;
+	margin: 0;
+	
+}
+body{
+	width: 100%;
+	font: normal 12px/22px "Microsoft Yahei";
+	/*font: normal 12px/22px "微软雅黑";*/
+	/*font: 12px/1.5em tohoma,arial,simsun,sans-serif;*/
+	
+	color: #666;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	
+}
+li{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+.goback{	
+	display: none;
+	width: 20px;
+	height: 70px;
+	position: fixed;
+	right: 80px;
+	bottom: 80px;
+	background: url(../img/top.png) no-repeat 0 0;
+}
+.goback:hover{
+	background: url(../img/top.png) no-repeat 0 -70px;
+	
+}
+.bg-sitenav{
+	min-width:1200px ;
+	background: url(../img/sitenav_bg.png) repeat-x ;
+	height: 29px;
+	border-bottom: solid 1px #ccc;
+	
+}
+.sitenav{
+	width: 1200px;
+	margin: 0 auto;	
+	height: 28px;
+}
+.loginReg{
+	width: 360px;
+	padding-top: 2px;
+	line-height: 25px;
+	float: left;
+}
+.loginReg a{
+	padding: 0 4px;
+	color: #0066ff;	
+}
+.loginReg a:hover{
+	color: #AE0001;
+}
+.quickmenu{
+	float: right;
+	line-height: 25px;
+	margin-top: 2px;
+}
+.myacount , .Jhelp{
+	float: left;
+	width: 82px;
+	height: 25px;
+	position: relative;
+	margin-right:8px ;
+	text-indent: 12px;
+	
+}
+.myacount span, .Jhelp span , .collection span{
+	position: absolute;
+	right:-2px;
+	top:8px;
+	width:2px;
+	height: 10px;
+	background:  url(../img/sl_sitenav.png) no-repeat -10px 0;;
+}
+.myacount b, .Jhelp b{
+	position: absolute;
+	right:10px;
+	top:10px;
+	width:7px;
+	height: 5px;
+	background:  url(../img/sl_sitenav.png) no-repeat 0 0;;
+}
+.myacount ul,.Jhelp ul{
+	display: none;
+}
+
+.myacount-over ul,.Jhelp-over ul{
+	border: 1px solid #CCC;
+	border-top: none;
+	background: #FFF;
+	margin-top: -2px;
+	padding-top: 2px;
+	width: 60px;
+	height: 76px;
+	padding: 0 10px;
+	position: absolute;
+	top: 26px;
+	left: -1px;
+	display: block;
+	z-index: 3;
+}
+
+.myacount-over ul li , .Jhelp-over ul li{
+	text-indent: 2px;	
+}
+.myacount-over ul li a:hover , .Jhelp-over ul li a:hover{
+	color: #AE0001;
+}
+.myacount-over , .Jhelp-over{
+	margin: 0;
+	float: left;
+	width: 80px;
+	height: 25px;
+	position: relative;
+	margin-right:8px ;
+	text-indent: 12px;
+	background:#fff;
+	border:1px solid #CCC;
+	border-top: 0;		
+}
+.myacount-over b, .Jhelp-over b{
+	position: absolute;
+	right:10px;
+	top:10px;
+	width:7px;
+	height: 5px;
+	background:  url(../img/sl_sitenav.png) no-repeat 0 -5px;
+}
+
+.collection{
+	float: left;
+	width: 56px;
+	height: 25px;
+	position: relative;
+	margin-right: 8px ;
+}
+.tel{
+	float: left;
+	width: 99px;
+	height: 25px;
+	position: relative;
+	text-indent: 14px;
+	
+}
+.tel b{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left:0px;
+	top:8px;	
+	background:  url(../img/sl_sitenav.png) no-repeat -20px 0;
+	margin-right: 8px ;
+}
+/*=====================header=============================*/
+.header{
+	width: 1200px;
+	height: 140px;	
+	margin: 0 auto 10px;
+	position: relative;
+	
+}
+.header .logo{
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	float: left;
+	
+}
+
+/*=====================header-nav=============================*/
+.header-nav{
+	width: 1200px;
+	height: 40px;
+	background: #C7012C ;
+	border-radius: 4px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	
+}
+.header-nav .category{
+	width: 210px;
+	height: 40px;
+	float: left;
+	font-size: 16px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+}
+.header-nav .mainnav{
+	width: 558px;
+	height: 40px;
+	float: left;
+	position: relative;
+	
+}
+#nav-a1{
+	color: #FF0;
+	height: 44px
+	position: absolute;
+	top: -4px;
+	font-weight: bold;
+	padding: 3px 11px 0 25px;
+	background: url(../img/menu_bg.PNG) no-repeat;
+}
+.header-nav .mainnav a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	background: url(../img/sl_header_icon.png) no-repeat 11px right;
+	float: left;
+	padding: 0 11px;
+	font-size: 16px;
+	float: left;
+	position: relative;
+	color: #FFFFFF;
+}
+.header-nav .mainnav .nav-a2 img ,.header-nav .mainnav .nav-a3 img{
+	position: absolute;
+	top:-8px;
+	right:0;
+}
+.header-nav .mainnav a:hover{
+	color: #FDCA30;
+}
+/*====================================购物车=======================*/
+.header-nav .tcart{	
+	background: #C7012C url(../img/tcartbg.png) no-repeat -10px -80px;
+	float: right;
+	text-indent: 40px;
+	width: 197px;
+	height: 27px;
+	line-height: 27px;
+	margin: 6px 10px 0 0;
+	border-radius: 3px;
+}
+.tcart .tcart-pro{
+	width: 130px;
+	height: 27px;
+	line-height: 27px;
+	float: left;
+	position: relative;
+}
+.tcart-pro .tcart-pro-list{
+	width: 197px;
+	height: 30px;	
+	font-size: 12px;
+	color: #C8012C;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	padding-top: 8px;
+	z-index: 2;
+	background: #fff;
+	position: absolute;
+	text-indent: 0;	
+	display: none;
+	border: 1px solid red;
+}
+.tcart-pro b{
+	position: absolute;
+	right:16px;
+	top:12px;
+	width:7px;
+	height: 5px;
+	background:  url(../img/sl_sitenav.png) no-repeat 0 0;
+}
+
+.tcart-pro .Cart-num{
+	color: #C8012C;
+	font-weight: bold;
+	margin: 0 2px;
+}
+.tcart .jiesuan{
+	float: right;
+	display: block;
+	
+	font-size: 12px;
+	line-height: 27px;
+	width: 50px;
+	height: 27px;
+	text-indent: 0;		
+}
+.tcart .jiesuan a{ 
+	color: #fff;
+}
+
+
+
+
+
+
+
+/*=========================footer==========================*/
+.footer{
+	width: 980px;
+	height: 340px;
+	margin: 20px auto;	
+}
+.footer-nav{
+	margin-top:20px ;
+	width: 980px;
+	height: 170px;
+}
+.service{
+	width: 250px;
+	height: 117px;
+	padding-top: 20px;
+	color:#999;
+	float: left;
+}
+.service p{
+	    padding-left: 35px;
+    line-height: 24px;
+    vertical-align: middle;
+}
+.service b{
+	font-size: 16px;
+	color: #333;
+	font-weight: normal;
+	font-family: arial;
+	line-height: 24px;
+
+}
+.service-time{
+	width: 181;
+	height: 54px;
+	padding-top: 12px;
+    text-align: right;
+    padding-left: 69px;
+    position: relative;
+}
+.service-time p{
+	padding-left: 35px;
+line-height: 27px;
+vertical-align: middle;
+}
+.service-time span{
+	color: #FF6600;
+}
+.service-time b{
+	
+	background: url(../img/sl_footer.png) no-repeat 0 -48px;
+	position: absolute;
+	left: 40px;
+	top: 8px;
+	width: 52px;
+	height: 50px;
+}
+.service-guide{
+	float: right;
+	width: 700px;
+	height: 150px;
+	margin-bottom: 20px;
+	
+}
+.service-guide ul{
+	float: left;
+		
+	width: 124px;
+	height: 150px;
+	border-left: solid 1px #ddd;
+	padding-left: 15px;
+}
+.service-guide .title{
+	height: 22px;
+	width: 124px;
+	line-height: 22px;
+	margin-bottom: 4px;
+	font-size: 14px;
+	color: #000;
+}
+.service-guide li{
+	height: 20px;
+	width: 124px;
+	line-height: 20px;
+	overflow: hidden;
+}
+.service-guide li a{
+
+	color: #999;
+}
+.copyright{
+	width: 980px;
+	height: 88px;
+	position: relative;
+}
+.copyright ul{
+	width: 980px;
+	height: 20px;
+	overflow: hidden;
+}
+.copyright ul li{
+	float: left;
+	padding: 0 10px;
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	background: url(../img/sl_footer.png) no-repeat right -75px;
+}
+
+.copyright ul li a{
+	color: #333;
+}
+.copyright-p{
+	color: #999;
+	padding-left: 10px;
+	padding-top: 2px;
+	width: 970px;
+	height: 66px;
+}
+.copyright-p p{
+	color: #999;
+	width: 970px;
+	height: 22px;
+}
